@@ -1013,7 +1013,7 @@ ${
           </div>
 
           {/* Input Form - Always visible at bottom */}
-          <div className="absolute bottom-0 left-0 right-0 bg-transparent p-2 shadow-lg">
+          <div className="absolute bottom-0 left-0 right-0 bg-purple-300 p-1.5 shadow-lg rounded-xl">
             <form
               onSubmit={handleSubmit}
               className="flex space-x-1 max-w-4xl mx-auto"

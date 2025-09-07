@@ -12,12 +12,12 @@ export const Footer: React.FC<FooterProps> = ({
   setActiveTab,
   showWallet = false,
 }) => (
-  <div className="fixed bottom-3 left-0 right-0 mx-auto bg-transparent border-2 border-purple-100 p-1 rounded-2xl z-50 w-max">
-    <div className="flex justify-center items-center gap-2 h-12 w-max">
+  <div className="fixed bottom-0 left-0 right-0 z-50  mx-3 px-3 py-3 bg-purple-100 flex items-center justify-between rounded-t-3xl">
+    <div className="flex justify-center items-center gap-2 h-12 w-max bg-transparent border-2 border-purple-600 p-1 rounded-2xl mx-auto">
       <button
         onClick={() => setActiveTab(Tab.Home)}
-        className={`flex flex-col items-center justify-center w-[60px] h-full ${
-          activeTab === Tab.Home ? "border-2 border-purple-100 rounded-xl" : ""
+        className={`flex flex-col items-center justify-center w-[60px] h-full text-purple-600 ${
+          activeTab === Tab.Home ? "border-2 border-purple-600 rounded-xl" : ""
         }`}
       >
         {/* <span className="text-xl">🏠</span> */}
@@ -40,8 +40,8 @@ export const Footer: React.FC<FooterProps> = ({
       </button>
       <button
         onClick={() => setActiveTab(Tab.Chat)}
-        className={`flex flex-col items-center justify-center w-[60px] h-full ${
-          activeTab === Tab.Chat ? "border-2 border-purple-100 rounded-xl" : ""
+        className={`flex flex-col items-center justify-center w-[60px] h-full text-purple-600 ${
+          activeTab === Tab.Chat ? "border-2 border-purple-600 rounded-xl" : ""
         }`}
       >
         {/* <span className="text-xl">💬</span> */}
