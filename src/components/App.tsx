@@ -81,8 +81,8 @@ export default function App(
   // --- Early Returns ---
   if (!isSDKLoaded) {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <div className="text-center">
+      <div className="futuristic-bg flex items-center justify-center h-screen">
+        <div className="text-center text-white relative z-10">
           <div className="spinner h-8 w-8 mx-auto mb-4"></div>
           <p>Loading SDK...</p>
         </div>
@@ -93,6 +93,7 @@ export default function App(
   // --- Render ---
   return (
     <div
+      className="futuristic-bg min-h-screen"
       style={{
         paddingTop: context?.client.safeAreaInsets?.top ?? 0,
         paddingBottom: context?.client.safeAreaInsets?.bottom ?? 0,
@@ -104,9 +105,9 @@ export default function App(
       <Header neynarUser={neynarUser} />
 
       {/* Main content and footer should be centered */}
-      <div className="container py-2 pb-20">
+      <div className="container">
         {/* Main title */}
-        <h1 className="text-2xl font-bold text-center mb-4">{title}</h1>
+        <h1 className="text-2xl font-bold text-center mb-4 text-white relative z-10">{title}</h1>
 
         {/* Tab content rendering */}
         {currentTab === Tab.Home && <HomeTab />}

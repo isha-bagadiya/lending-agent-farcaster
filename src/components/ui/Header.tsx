@@ -17,12 +17,12 @@ export function Header({ neynarUser }: HeaderProps) {
   const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative z-20">
       <div 
-        className="mt-4 mb-4 mx-4 px-2 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-between border-[3px] border-double border-primary"
+        className="mx-3 px-6 py-9 bg-purple-100 flex items-center justify-between rounded-b-3xl"
       >
-        <div className="text-lg font-light">
-          Welcome to {APP_NAME}!
+        <div className="text-sm font-bold text-purple-600">
+          {APP_NAME}
         </div>
         {context?.user && (
           <div 
